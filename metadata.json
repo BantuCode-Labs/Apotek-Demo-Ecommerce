@@ -1,0 +1,6 @@
+{
+  "name": "Sehat Sentosa Apotek",
+  "description": "Solusi kesehatan terpercaya, cepat, dan berkualitas untuk keluarga Anda. Temukan obat-obatan, vitamin, dan ajukan resep dokter dengan nyaman.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

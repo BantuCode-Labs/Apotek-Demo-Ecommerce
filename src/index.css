@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;447;500;700;800&family=Outfit:wght@400;600;800;900&family=JetBrains+Mono:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-emerald-250: #a7f3d0;
+  --color-emerald-500: #10b981;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #fcfdfd;
+  color: #1f2937;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+}
+
+@keyframes pulse-progress {
+  0% { width: 0%; }
+  50% { width: 70%; }
+  100% { width: 100%; }
+}
+
+@keyframes scanner-laser {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(280px); }
+  100% { transform: translateY(0); }
+}
+
+.animate-pulse-progress {
+  animation: pulse-progress 2.8s infinite ease-in-out;
+}
+
+.animate-scanner-laser {
+  animation: scanner-laser 3s infinite ease-in-out;
+}
