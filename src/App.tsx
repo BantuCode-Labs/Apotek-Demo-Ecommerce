@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import HomeScreen from './screens/HomeScreen';
@@ -271,6 +272,8 @@ export default function App() {
       {/* 4. CLINICALLY POLISHED SHARED FOOTER */}
       <Footer onNavigate={setActiveTab} />
       
+      {/* Vercel Web Analytics */}
+      <Analytics />
     </div>
   );
 }
